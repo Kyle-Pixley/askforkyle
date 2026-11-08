@@ -1,0 +1,86 @@
+/* Global Variables */
+
+:root {
+    --background: #FFFFCC;
+    --surface: #171b24;
+    --primary: #ed3d66;
+    --text: #556b2F;
+    --text-muted: #a1a1a1;
+    --border: #4AA844;
+}
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Shared Component */
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    transition: background 0.2s ease;
+}
+
+.contact-button:hover {
+    background: #292e39;
+}
+
+.contact-button.primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* mobile layout */
+
+.mobile-layout {
+    display: block;
+}
+
+.desktop-layout {
+    display: none;
+}
+
+.mobile-home {
+    min-height: 100dvh;
+    padding: 24px;
+}
+
+/* Desktop layout */
+
+@media (min-width: 768px) {
+    .mobile-layout {
+        display: none;
+    }
+
+    .desktop-layout {
+        display: block;
+    }
+
+    .desktop-home {
+        min-height: 100vh;
+        padding: 48px;
+    }
+}
