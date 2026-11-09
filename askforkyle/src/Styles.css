@@ -1,12 +1,12 @@
 /* Global Variables */
 
 :root {
-    --background: #FFFFCC;
+    --background: #0b0e14;
     --surface: #171b24;
-    --primary: #ed3d66;
-    --text: #556b2F;
+    --primary: #e50924;
+    --text: #ffffff;
     --text-muted: #a1a1a1;
-    --border: #4AA844;
+    --border: #343a46;
 }
 
 /* Global Styles */
@@ -22,7 +22,7 @@ html, body, #root {
 }
 
 body {
-    background: var(--background);
+    background-image: url('./assets/red-black-background.png');
     color: var(--text);
     text-align: center;
     font-family: Arial, sans-serif;
@@ -53,6 +53,11 @@ body {
     border-color: var(--primary);
 }
 
+.kp-logo {
+    width: 70vw;
+    height: auto;
+}
+
 /* mobile layout */
 
 .mobile-layout {
@@ -66,6 +71,7 @@ body {
 .mobile-home {
     min-height: 100dvh;
     padding: 24px;
+    margin-top: 6vh;
 }
 
 /* Desktop layout */
@@ -82,5 +88,12 @@ body {
     .desktop-home {
         min-height: 100vh;
         padding: 48px;
+    }
+    .kp-logo {
+        width: 50vw;
+    }
+    .contact-button.primary{
+        max-width: 30vw;
+        margin: auto;
     }
 }

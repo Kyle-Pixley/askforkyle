@@ -1,10 +1,12 @@
-
+import kpLogo from '../assets/KPLogo.png';
 
 function MobileHome() {
   return (
     <main className='mobile-home'>
-        <h1>Ask for Kyle</h1>
-        <p>Kyle Pixley - Wireless Sales Consultant</p>
+        <img src={kpLogo} alt='KP Logo' className='kp-logo'/>
+        <h1>Kyle Pixley</h1>
+        <p>Wireless Sales Consultant</p>
+        <p>Cellular Sales | Verizon Authorized Retailer</p>
         <a 
             href='/contact.vcf'
             download="Kyle-Pixley.vcf"
@@ -15,4 +17,4 @@ function MobileHome() {
   )
 }
 
-export default MobileHome
+export default MobileHome;
