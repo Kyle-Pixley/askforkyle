@@ -23,6 +23,9 @@ html, body, #root {
 
 body {
     background-image: url('./assets/red-black-background.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--text);
     text-align: center;
     font-family: Arial, sans-serif;
@@ -42,6 +45,7 @@ body {
     text-decoration: none;
     border: 1px solid var(--border);
     transition: background 0.2s ease;
+    margin-top: 3vh;
 }
 
 .contact-button:hover {
@@ -80,20 +84,38 @@ body {
     .mobile-layout {
         display: none;
     }
-
     .desktop-layout {
-        display: block;
+        display: flex;
     }
-
     .desktop-home {
         min-height: 100vh;
         padding: 48px;
+        margin-left: 6vw;
+        text-align: start;
+    }
+    h1 {
+        font-size: 60px;
     }
     .kp-logo {
-        width: 50vw;
+        width: 30vw;        
+    }
+    .links-parent {
+        max-width: 30vw;
+    }
+    .contact-button {
+        align-items: start;
     }
     .contact-button.primary{
         max-width: 30vw;
         margin: auto;
+    }
+    .icon-container {
+        display: flex;
+    }
+    .icon-parents {
+        margin: 12px;
+    }
+    .icons {
+        width: 50px;
     }
 }
